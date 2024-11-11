@@ -1,0 +1,68 @@
+/* style.css */
+
+/* General body styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e; /* Dark background */
+  color: #ffffff; /* Light text color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Canvas container */
+canvas {
+  border: 2px solid #ffffff; /* White border for contrast */
+  background-image: linear-gradient(
+      45deg,
+      #4d4d4d 25%,
+      transparent 25%,
+      transparent 75%,
+      #4d4d4d 75%,
+      #4d4d4d
+    ),
+    linear-gradient(
+      45deg,
+      #4d4d4d 25%,
+      transparent 25%,
+      transparent 75%,
+      #4d4d4d 75%,
+      #4d4d4d
+    );
+  background-size: 20px 20px; /* Size of the checkered grid */
+  background-position: 0 0, 10px 10px; /* Offset the layers for the grid effect */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+
+/* File input */
+input[type="file"] {
+  background-color: #3a3a3a; /* Dark button background */
+  color: #ffffff; /* White text */
+  border: 1px solid #555555; /* Subtle border */
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* File input hover and focus states */
+input[type="file"]:hover {
+  background-color: #555555; /* Highlighted background */
+}
+
+input[type="file"]:focus {
+  background-color: #444444; /* Focus background */
+  box-shadow: 0 0 5px #ffffff; /* Subtle glow effect */
+}
+
+/* Center alignment */
+#imageLoader {
+  margin-top: 20px;
+}
