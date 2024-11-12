@@ -1,8 +1,8 @@
 //canvas setup
 const canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
-canvas.width = 800;
-canvas.height = 600;
+canvas.width = 500;
+canvas.height = 400;
 
 //should be uploading the images or just the whole sheet on export, so images don't need to be stored unless saved as a draft or exported, how could I save a draft that holds the entire canvas?
 const imageLoader = document.getElementById("imageLoader");
@@ -69,6 +69,7 @@ canvas.addEventListener("mouseup", () => {
   canvas.removeEventListener("mousemove", onDragOrResize);
 });
 
+//should or shouldn't reverve/invert image if dragged out?
 function onDragOrResize(e) {
   const { offsetX, offsetY } = e;
   if (selectedImage.isDragging) {
